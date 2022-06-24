@@ -16,15 +16,13 @@ router.get("/", async (ctx) => {
 });
 
 
-// // 新增用户信息
+// 新增用户信息
 // router.post("/api/updatauserInfo", async (ctx) => {
 //   const { request } = ctx;
 //   let { user_info } = request.body;
 //   console.log("request======>", user_info)
 
 //   const { user_name, gender, avatarUrl, phone_number, country, province, city } = user_info;
-
-
 //   await userInfo.updateOne({
 //     user_name, gender, avatarUrl, phone_number, country, province, city
 //   }).then(rel => {
@@ -36,7 +34,6 @@ router.get("/", async (ctx) => {
 
 //         }
 //       } else {
-//         userInfo.create();
 //         ctx.body = {
 //           code: 300,
 //           msg: '用户信息新增成功',
@@ -51,13 +48,6 @@ router.get("/", async (ctx) => {
 //       err
 //     }
 //   });
-
-//   // // await userInfo.create();
-
-//   // ctx.body = {
-//   //   code: 200,
-//   //   data: await Counter.count(),
-//   // };
 // });
 
 // // 更新通知信息
@@ -76,7 +66,6 @@ router.get("/", async (ctx) => {
 
 //         }
 //       } else {
-//         userInfo.create();
 //         ctx.body = {
 //           code: 300,
 //           msg: '通知信息新增成功',
@@ -93,18 +82,18 @@ router.get("/", async (ctx) => {
 //   });
 // });
 
-// // 获取通知信息
-// router.get("/api/getMessage", async (ctx) => {
-//   const result = {
-//     title: await Message.title(),
-//     message: await Message.message(),
-//   };
+// 获取通知信息
+router.get("/api/getMessage", async (ctx) => {
+  const result = {
+    title: await Message.title(),
+    message: await Message.message(),
+  };
 
-//   ctx.body = {
-//     code: 200,
-//     data: result,
-//   };
-// });
+  ctx.body = {
+    code: 200,
+    data: result,
+  };
+});
 
 
 

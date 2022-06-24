@@ -50,28 +50,28 @@ const Counter = sequelize.define("Counter", {
 //     defaultValue: '',
 //   },
 // });
-// // 通知信息模型
-// const Message = sequelize.define("Message", {
-//   title: {
-//     type: DataTypes.STRING,
-//     defaultValue: '',
-//   },
-//   message: {
-//     type: DataTypes.STRING,
-//     defaultValue: '',
-//   },
-// });
+// 通知信息模型
+const Message = sequelize.define("Message", {
+  title: {
+    type: DataTypes.STRING,
+    defaultValue: '',
+  },
+  message: {
+    type: DataTypes.STRING,
+    defaultValue: '',
+  },
+});
 
 // 数据库初始化方法
 async function init() {
   await Counter.sync({ alter: true });
   // await userInfo.sync({ alter: true });
-  // await Message.sync({ alter: true });
+  await Message.sync({ alter: true });
 }
 
 // 导出初始化方法和模型
 module.exports = {
   init,
-  Counter,
-  // userInfo, Message
+  Counter, Message
+  // userInfo,
 };
