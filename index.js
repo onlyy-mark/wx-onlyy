@@ -36,7 +36,7 @@ router.post("/api/updatauserInfo", async (ctx) => {
 
         }
       } else {
-        await userInfo.create();
+        userInfo.create();
         ctx.body = {
           code: 300,
           msg: '用户信息新增成功',
@@ -76,7 +76,7 @@ router.post("/api/updataMessage", async (ctx) => {
 
         }
       } else {
-        await userInfo.create();
+        userInfo.create();
         ctx.body = {
           code: 300,
           msg: '通知信息新增成功',
