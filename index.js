@@ -84,10 +84,13 @@ router.get("/", async (ctx) => {
 
 // 获取通知信息
 router.get("/api/getMessage", async (ctx) => {
-  const result = {
-    title: await Message.title(),
-    message: await Message.message(),
-  };
+  // const result = {
+  //   title: await Message.title(),
+  //   message: await Message.message(),
+  // };
+
+  const result = await Message.title();
+
 
   ctx.body = {
     code: 200,
