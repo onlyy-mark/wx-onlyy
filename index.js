@@ -89,13 +89,19 @@ router.get("/api/getMessage", async (ctx) => {
   //   message: await Message.message(),
   // };
 
-  const result = await Message.title();
+  // const result = await Message.title();
+  await userInfo.find({
+    title, message
+  }).then(rel => {
+    if (rel) {
+      ctx.body = {
+        code: 200,
+        data: rel,
+      };
+    }
+  })
 
 
-  ctx.body = {
-    code: 200,
-    data: result,
-  };
 });
 
 
