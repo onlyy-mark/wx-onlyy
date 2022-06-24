@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"name": "myblog",
+			"path": "C:\\Users\\hzb\\Desktop\\个人操作项目\\myblog"
+		},
+		{
+			"name": "LeetCodeAnimation-master",
+			"path": "..\\..\\..\\..\\..\\迅雷下载\\LeetCodeAnimation-master"
+		},
+		{
+			"name": "tsDemo",
+			"path": "C:\\Users\\hzb\\Desktop\\个人操作项目\\tsDemo"
+		},
+		{
+			"name": "vite-project",
+			"path": "C:\\Users\\hzb\\Desktop\\个人操作项目\\ADemo\\vite-project"
+		},
+		{
+			"path": "C:\\Users\\hzb\\Desktop\\company\\voce"
+		},
+		{
+			"path": "C:\\Users\\hzb\\Desktop\\company\\ops-hera-web"
+		},
+		{
+			"path": "C:\\Users\\hzb\\Desktop\\company\\协同系统-2022-06-15"
+		},
+		{
+			"path": "..\\..\\..\\dataStr"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\Koa2\\myblog-koa"
+		}
+	],
+	"settings": {
+		"editor.fontSize": 12,
+		"editor.formatOnSave": true,
+		"liveServer.settings.multiRootWorkspaceName": "v-bootstrapmb-com-efjza0yc"
+	}
+}
