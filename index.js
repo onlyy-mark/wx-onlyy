@@ -121,7 +121,8 @@ router.post("/api/count", async (ctx) => {
   }
 
   ctx.body = {
-    code: 0,
+    code: 200,
+    err_message: '更新成功',
     data: await Counter.count(),
   };
 });
@@ -131,7 +132,8 @@ router.get("/api/count", async (ctx) => {
   const result = await Counter.count();
 
   ctx.body = {
-    code: 0,
+    code: 200,
+    err_message: '获取成功',
     data: result,
   };
 });
